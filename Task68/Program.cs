@@ -16,4 +16,8 @@ Console.Write("Введите число m: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число n: ");
 int n = Convert.ToInt32(Console.ReadLine());
+if(m < 1 || n < 1) {
+    Console.WriteLine("Ошибка ввода!");
+    return;
+}
 Console.WriteLine($"m = {m}, n = {n} -> A(m,n) = {ack(n, m)}");
