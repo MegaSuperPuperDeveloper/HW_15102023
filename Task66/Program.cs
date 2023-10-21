@@ -14,7 +14,7 @@ Console.Write("Введите число M: ");
 int M = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
-if(M < 1 || N < 1) {
+if(M < 1 || N < 1 || M > N) {
     Console.WriteLine("Ошибка ввода!");
     return;
 }
